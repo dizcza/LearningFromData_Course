@@ -104,4 +104,4 @@ def run_iterations(n_samples, n_iters=1000):
 
 
 if __name__ == "__main__":
-    run_iterations(100)
+    run_iterations(1000)
