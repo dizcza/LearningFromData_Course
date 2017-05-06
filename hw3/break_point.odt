@@ -1,0 +1,21 @@
+For a given hypothesis (say 2D perceptrons) and a given number of points N, there are three possibilities.
+You can always separate the points, no matter how they are arranged or colored. In other words, you can ALWAYS shatter the points.
+Some arrangements of the points can be separated, no matter how colored. Some arrangements can be colored in a way that makes them non-separable. In other words, there are arrangements that you can shatter and arrangements that you cannot.
+No matter how the points are arranged, the is some coloring that cannot be separated. In other words, you can NEVER shatter the points.
+
+2D perceptrons illustrate all of these cases.
+
+With N=2, it is easy to see that no matter how you arrange the two points you can shatter them. If they are the same color, just pick any line that has the two points on the same side of the line. If they are opposite colors, pick any line that passes between the two points. So for N=2, you can ALWAYS shatter.
+
+With N=3, whether or not you can shatter depends on the arrangement of the points. Put the three points in a line, and color the middle point red and the end points blue, and you cannot separate them, so 3 points in a line cannot be shattered.
+
+Put the three points in a triangle, and then they can always be separated. If they are all the same color, pick a line that does not intersect the triangle. If one is red and two are blue, consider the two line segments that join the red to the blues, and draw a line through the bisectors of those segments. That line separates the points. Similar argument if there is one blue and two reds.
+
+So, for N=3, whether you can shatter or not depends on the arrangement.
+
+With N=4, no matter how you arrange the points, there is coloring that cannot be separated, so with N=4 you can NEVER shatter.
+
+That means 4 is the break point for 2D perceptron.
+
+Note also that for N<4, you can always find an arrangement of points that can be shattered (because for N<3 you can shatter ever arrangement, an for N=3 there are arrangements you can shatter). So the growth function of N<4 is 2^N. That's because the growth function is the MAXIMUM number of dichotomies you can separate, so even though there are some arrangements at N=3 that cannot be shattered, we are only interested in the maximum, so the important thing for N=3 is that there are some that can be shattered.
+

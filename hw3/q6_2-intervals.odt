@@ -1,0 +1,4 @@
+Q7: 
+m(H) = C_n+1_4 when 2 disjoint intervals
+	+ C_n+1_2 when 2 intervals overlaps into 1 interval
+	+ 1 when 2 intervals combines into a single point

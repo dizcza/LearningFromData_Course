@@ -1,0 +1,5 @@
+project all points onto X axis
+pick 2 random intervals among N+1 choices (2 points out of N+1)
+add one when circles degenerates into a single point
+
+ASNWER: C_n+1_2 + 1
