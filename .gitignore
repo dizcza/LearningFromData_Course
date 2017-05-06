@@ -2,4 +2,5 @@
 *.pyc
 .idea/
 temp.py
+MyOld/*.txt
 
